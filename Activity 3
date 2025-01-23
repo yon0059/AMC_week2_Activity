@@ -1,0 +1,36 @@
+import React from 'react';
+import {Text, StyleSheet} from 'react-native';
+import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+
+const BoldAndBeautiful = () => (
+  <SafeAreaProvider>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.baseText}>
+        I am Robert Betorico, a UI Designer on our
+        <Text style={styles.innerText1}> SYSARCH1</Text> and
+        <Text style={styles.innerText2}> SYSARCH2</Text>
+      </Text>
+    </SafeAreaView>
+  </SafeAreaProvider>
+);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center'
+  },
+  baseText: {
+  textAlign: 'center',
+  },
+  innerText1: {
+    color: 'red',
+    fontWeight: 'bold',
+  },
+    innerText2: {
+    color: 'blue',
+    fontWeight: 'bold',
+  },
+
+});
+
+export default BoldAndBeautiful;
